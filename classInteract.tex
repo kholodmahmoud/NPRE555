@@ -1,0 +1,99 @@
+\hypertarget{classInteract}{}\doxysection{Interact Class Reference}
+\label{classInteract}\index{Interact@{Interact}}
+
+
+Class responsible for neutron interactions and calculations.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classInteract_ac987e8111db92dbd14345c5bb0569535}{absorption}} (double sigma\+\_\+f, double sigma\+\_\+a, double sigma\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Calculate absorption interaction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInteract_a97013cafd8236998291b2fa6d5d7dc34}{scattering}} (double sigma\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Calculate scattering interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classInteract_af2c1a53937a4ccd7c968a006024bcd1b}{I}}
+\item 
+double \mbox{\hyperlink{classInteract_ae08b7c686beda84fb842b8777a5a0f21}{l}}
+\item 
+double \mbox{\hyperlink{classInteract_ab448bdb133a458149fffc866d7567acb}{angle\+\_\+sc}}
+\item 
+double \mbox{\hyperlink{classInteract_a3f3e792fcab51c7a492a6053941991e4}{ls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for neutron interactions and calculations. 
+
+This class handles neutron interactions, including absorption, scattering, and fission, and calculates related parameters. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInteract_ac987e8111db92dbd14345c5bb0569535}\label{classInteract_ac987e8111db92dbd14345c5bb0569535}} 
+\index{Interact@{Interact}!absorption@{absorption}}
+\index{absorption@{absorption}!Interact@{Interact}}
+\doxysubsubsection{\texorpdfstring{absorption()}{absorption()}}
+{\footnotesize\ttfamily void Interact\+::absorption (\begin{DoxyParamCaption}\item[{double}]{sigma\+\_\+f,  }\item[{double}]{sigma\+\_\+a,  }\item[{double}]{sigma\+\_\+t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculate absorption interaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sigma\+\_\+f} & Fission cross section. \\
+\hline
+{\em sigma\+\_\+a} & Absorption cross section. \\
+\hline
+{\em sigma\+\_\+t} & Total cross section. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInteract_a97013cafd8236998291b2fa6d5d7dc34}\label{classInteract_a97013cafd8236998291b2fa6d5d7dc34}} 
+\index{Interact@{Interact}!scattering@{scattering}}
+\index{scattering@{scattering}!Interact@{Interact}}
+\doxysubsubsection{\texorpdfstring{scattering()}{scattering()}}
+{\footnotesize\ttfamily void Interact\+::scattering (\begin{DoxyParamCaption}\item[{double}]{sigma\+\_\+t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculate scattering interaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sigma\+\_\+t} & Total cross section. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classInteract_ab448bdb133a458149fffc866d7567acb}\label{classInteract_ab448bdb133a458149fffc866d7567acb}} 
+\index{Interact@{Interact}!angle\_sc@{angle\_sc}}
+\index{angle\_sc@{angle\_sc}!Interact@{Interact}}
+\doxysubsubsection{\texorpdfstring{angle\_sc}{angle\_sc}}
+{\footnotesize\ttfamily double Interact\+::angle\+\_\+sc}
+
+Scattering angle. \mbox{\Hypertarget{classInteract_af2c1a53937a4ccd7c968a006024bcd1b}\label{classInteract_af2c1a53937a4ccd7c968a006024bcd1b}} 
+\index{Interact@{Interact}!I@{I}}
+\index{I@{I}!Interact@{Interact}}
+\doxysubsubsection{\texorpdfstring{I}{I}}
+{\footnotesize\ttfamily double Interact\+::I}
+
+Number of fission neutrons. \mbox{\Hypertarget{classInteract_ae08b7c686beda84fb842b8777a5a0f21}\label{classInteract_ae08b7c686beda84fb842b8777a5a0f21}} 
+\index{Interact@{Interact}!l@{l}}
+\index{l@{l}!Interact@{Interact}}
+\doxysubsubsection{\texorpdfstring{l}{l}}
+{\footnotesize\ttfamily double Interact\+::l}
+
+Distance to the next collision in case of fission. \mbox{\Hypertarget{classInteract_a3f3e792fcab51c7a492a6053941991e4}\label{classInteract_a3f3e792fcab51c7a492a6053941991e4}} 
+\index{Interact@{Interact}!ls@{ls}}
+\index{ls@{ls}!Interact@{Interact}}
+\doxysubsubsection{\texorpdfstring{ls}{ls}}
+{\footnotesize\ttfamily double Interact\+::ls}
+
+Distance to the next collision in case of scattering. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+CP1.\+cpp\end{DoxyCompactItemize}
